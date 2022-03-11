@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+header
+{
+  height: 100vh;
+  
+}
+
+body {
+   height: 100%;
+   width: 100%;
+   color: #222;
+   font-family: 'Lato', sans-serif;
+
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+   letter-spacing: 0.5px;
+   text-transform: uppercase;
+   font-family: 'Lato', sans-serif;
+   color: #222;
+}
+
+
+h2{
+  padding-bottom: 50px;
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: 700;
+  color: #222;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 25px;
+  color: #222;
+  text-transform: uppercase;
+}
+
+p{
+  font-family: 'Lato', sans-serif;
+
+}
+
+
+
+
+body{
+  margin: 0px;
+  background: #fff;
+}
+
+
+
+/* =========== Navigation bar =========== */
+#box4{
+  overflow: hidden;
+}
+
+.navbar{
+  position: fixed;
+  width: 100%;
+  height: 8%;
+  background-color: #fff !important;
+  background-size: cover;
+  z-index: 10;
+  padding: 20px;
+}
+
+.navbar-nav {
+  margin-left: auto;
+  margin-right: 0 !important;
+}
+.navbar-brand img {
+  width: auto;
+  height: 55px;
+  margin-left: 30px;
+}
+.nav-item {
+  margin: 0px 15px;
+}
+.nav-link{        
+  color: #222;
+}
+
+.navbar a:hover {
+  color:#d6151f;
+  
+}
+
+
+
+/* =========== Hero =========== */
+
+.hero{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+}
+#box1 {
+  width: 1400px;
+  height: 780px;
+  position: absolute;
+  bottom: 100%;
+  left:30%;
+  animation: anim 2s forwards, anim2 3s forwards 3s;
+}
+
+
+#box1::after {
+  content: '';
+  position: absolute;
+  width: 650px;
+  height: 805px;
+  left: -100px;
+  z-index: -1;
+  
+}
+@keyframes anim{
+  from{
+
+     bottom:-100%;
+
+  }
+  to{
+
+     bottom:0;
+  }
+}
+
+@keyframes anim2{
+  from{
+
+  left: 30%;
+  width:530px;
+
+  }
+  to{
+
+  width:0px;
+  left: 40%;
+
+  }
+}
+/*==========Draft====*/
+#box2 {
+  width: 1400px;
+  height: 780px;
+  position: absolute;
+  bottom: 100%;
+  left:30%;
+  animation: anim 2s forwards, anim5 3s forwards 2s;
+  
+}
+
+#box2::after {
+  content: '';
+  position: absolute;
+  width: 650px;
+  height: 800px;
+  left: -100px;
+  z-index: -1;
+  
+}
+
+@keyframes anim{
+  from{
+
+     bottom:-100%;
+
+  }
+  to{
+
+     bottom:0;
+  }
+}
+
+@keyframes anim5{
+  from{
+
+    left: 30%;
+    width:530px;
+  
+    }
+    to{
+  
+    width:0px;
+    left: 100%;
+
+  }
+}
+/*==========END BOX 4=====*/
+
+/*==========TEXT=====*/
+#box3{
+  width: auto;
+  height: auto;
+  color: #222;
+  font-family: 'Lato', sans-serif;
+  font-size: 84px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.2;
+  position: absolute;
+  top: 250px;
+  left: 100px;
+  overflow: hidden;
+
+}
+
+
+.text{
+  position: relative;
+  left: 100%;
+  animation: anim3 2s forwards 3s;
+}
+
+@keyframes anim3{
+  from{
+     left: -100%;
+  }
+  to{
+     left: 0%;
+  }
+}
+
+.text span{
+  color: #d6151f;
+  font-family: 'Sorts Mill Goudy', serif;
+  font-size: 105%;
+}
+
+
+
+/* =========== Button =========== */
+
+
+.btn {
+  display: flex;
+  align-items: flex-start;
+  width: 165px;
+  position: relative;
+  margin-top: 15px;
+  padding: 10px 30px;
+  background:#d6151f;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  text-transform: capitalize;
+  animation: anim4 2s forwards 3s;
+ 
+
+}
+
+
+.btn:hover {
+  background: #222;
+  color: #fff;
+}
+
+@keyframes anim4{
+  from{
+    left: -100%;
+  }
+  to{
+    left: 0%;
+  }
+}
+
+
+
+
+/*=========== Ranking=========== */
+
+.rank .box-container {
+  display: grid;
+  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
+  
+}
+
+.rank .box-container .box {
+  text-align: center;
+  background: #F8F1EF;
+  padding: 35px;
+}
+
+.rank .box-container .box h3 {
+  font-size: 48px;
+  font-family: 'Sorts Mill Goudy', serif;
+  font-weight: 700;
+  color: #d6151f;
+  text-transform: capitalize;
+  padding-top: 15px;
+}
+
+.rank .box-container .box p {
+
+  font-size: 16px;
+  color: #222;
+  text-transform: capitalize;
+  line-height: 1.5;
+}
+
+/* =========== Services =========== */
+
+.services {
+  background: #fff;
+  margin: 100px;
+
+}
+
+.services h3 {
+  padding-top: 15px;
+ 
+}
+
+
+.services .card-container .card p {
+  font-size: 16px;
+  color: #222;
+  line-height: 1.5;
+}
+
+
+.services .card-container {
+  display: grid;
+  -ms-grid-columns: (minmax(12rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  column-gap: 25px;
+  row-gap: 50px;
+}
+
+.services .card-container .card {
+  text-align: justify;
+  padding: 35px;
+  background: #fff;
+  border: none;
+  -webkit-box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+          box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.fa-compass-drafting{
+  color: #d6151f;
+  font-size: 50px;
+  
+}
+
+.fa-city{
+  color: #d6151f;
+  font-size: 50px;
+  
+}
+
+.fa-comment-dots{
+  color: #d6151f;
+  font-size: 50px;
+  
+}
+
+.services .card-container .card:hover .fa-compass-drafting {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+}
+.services .card-container .card:hover .fa-city {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+}
+.services .card-container .card:hover .fa-comment-dots {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+}
+
+
+
+/*=========== Project======= */
+#project{
+  margin: 100px;
+ 
+}
+
+.project-card {
+  overflow: hidden;
+  position: relative;
+  
+}
+
+.project-card img{
+  width: 100%;
+  height: fit-content;
+  
+}
+
+.project-card img,
+.project-card .portfolio-overlay {
+   transition: all 0.4s ease;
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #c2242cc5;
+  display: flex;
+  align-items: flex-end;
+  padding: 25px;
+  opacity: 0;
+}
+
+.project-overlay h3 {
+  color: #fff;
+  font-size: 24px;
+  text-transform: capitalize;
+  
+  
+}
+
+.project-overlay p{
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase; 
+  
+}
+
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-card:hover img {
+  transform: scale(1.1);
+}
+
+
+/* =========== Culture =========== */
+
+.culture {
+  margin: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+
+}
+.culture-img{
+  width: auto;
+  padding-top: 25px;
+}
+
+.culture h2{
+  padding: 0%;
+}
+
+.culture .text p{
+  font-size: 16px;
+  text-align: justify;
+  padding-top: 25px;
+  padding-bottom: 25px;
+ }
+
+ .culture .btn{
+  animation: none;
+  
+}
+
+
+
+ /* =========== Team =========== */
+ .team {
+  background: #fff;
+  margin: 100px;
+  text-align: center;
+ }
+
+ .team .card-container {
+  border: none;
+  -webkit-box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+          box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+  padding-bottom: 25px;
+          
+}
+.team .row{
+  row-gap: 50px;
+}
+.team h3{
+  text-align: center;
+  margin-bottom: 15px;
+  
+}
+
+.team .btn{
+  
+  animation: none;
+  display: inline-block;
+  position: relative;
+  font-size: 17px;
+  padding: 8px;
+  width: 8rem;
+  animation: none;
+
+}
+
+
+ 
+
+.team p {
+  text-align: center;
+  font-size: 16px;
+  color: #222;
+  line-height: 1.5;
+  padding-left: 50px;
+  padding-right: 50px;
+  
+}
+
+
+
+
+/*=====Footer=====*/
+footer {
+  position: relative;
+  padding: 50px 0;
+  background-color: #000;
+}
+.footer-inner
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+footer ul
+{
+    margin-left: 0;
+}
+footer ul li
+{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+footer ul li a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+
+.btn-footer {
+  display: inline-block;
+  position: relative;
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: capitalize;
+  text-decoration: none;
+
+}
+
+
+.btn-footer:hover {
+  background: #d6151f;
+  color: #fff;
+  text-decoration: none;
+}
+
+/*Newsletters*/
+.newsletter{
+  background-color: #F8F1EF;
+  padding: 30px;
+}
+.newsletter .container{
+  background-size: cover;
+  padding-bottom: 25px;
+  text-align: center;
+  color: #fff;
+}
+
+
+.container p {
+  max-width: 900px;
+  margin: 20px auto;
+  font-size: 16px;
+  font-weight: 300;
+  color: #222;
+  
+}
+
+.email-box{
+  height: 35px;
+  justify-content: center;
+  display: inline-flex;
+}
+.email-box i{
+  background: #d6151f;
+  width: 40px;
+  line-height: 35px;
+}
+.tbox,.btn-news{
+  border: none;
+  outline: none;
+}
+.tbox{
+  width: 0px;
+  transition: 0.6s;
+}
+.email-box:hover > .tbox,.tbox:focus{
+  width: 260px;
+  padding: 0 20px;
+}
+ .btn-news{
+  background: #d6151f;
+  color: white;
+  padding: 0px 35px;
+  cursor: pointer;
+  animation: none;
+  font-size: 16px;
+}
+
+
